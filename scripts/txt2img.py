@@ -94,6 +94,9 @@ def check_safety(x_image):
             x_checked_image[i] = load_replacement(x_checked_image[i])
     return x_checked_image, has_nsfw_concept
 
+def check_safety(x_image):
+    return x_image, ' '
+    safety_checker_input = ...
 
 def main():
     parser = argparse.ArgumentParser()
